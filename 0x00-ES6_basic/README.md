@@ -1,1 +1,1 @@
-this is the main dir!
+this is the new project! js
