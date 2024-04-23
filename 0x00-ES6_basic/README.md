@@ -1,1 +1,1 @@
-this is a readme for the fist ex
+this is the main dir!
