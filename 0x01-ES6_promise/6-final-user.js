@@ -4,5 +4,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       module.default(firstName, lastName)
     ),
     import("./5-photo-reject").then((module) => module.default(fileName)),
-  ]);
+  ]).then((res) =>
+    res.map((o) => ({
+      status: o.status,
+      value: o.status === "fulfilled" ? o.value : String(o.reason),
+    }))
+  );
 }
